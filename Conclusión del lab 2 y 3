@@ -1,2 +1,3 @@
-Según las mediciones de tiempo, el algoritmo que utiliza quicksort es el peor de los tres, mientras que 
-el que inserta los datos en orden y utiliza busqueda binaria es el mejor de los 3 algoritmos.
+Según las mediciones de tiempo, el algoritmo que utiliza quicksort junto al que inserta en orden y utiliza busqueda binaria obtienen
+malos resultados en cuanto al tiempo de ejecucion de los algoritmos, mientras que el que inserta los datos al final y usa busqueda 
+secuencial es el mejor de los 3 algoritmos.
