@@ -39,21 +39,25 @@ lista *InsertarOrden(lista *L){
 lista *temp;
 temp = L;
 int i;
+int j;
 int aux;
+
 
 for (i=0; i< temp->tamano; i++){
 	
 		temp->arreglo[i] = rand()%10000 + rand()%100000;
 		temp -> datos++;
-
-
-		if(temp->arreglo[i]>temp->arreglo[i-1]){
-			aux = temp->arreglo[i-1];
-			temp->arreglo[i-1] = temp->arreglo[i];
-			temp->arreglo[i] = aux;
-			
+		for(j=0; j<i; j++){
+			if(temp->arreglo[i]>temp->arreglo[j]){
+				aux = temp->arreglo[j];
+				temp->arreglo[j] = temp->arreglo[i];
+				temp->arreglo[i] = aux;
+		
+				}
+			}
 		}
-	}
+	
+	
 	return (temp);
 }
 
