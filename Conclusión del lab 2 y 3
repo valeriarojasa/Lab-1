@@ -1,3 +1,15 @@
 Según las mediciones de tiempo, el algoritmo que utiliza quicksort junto al que inserta en orden y utiliza busqueda binaria obtienen
 malos resultados en cuanto al tiempo de ejecucion de los algoritmos, mientras que el que inserta los datos al final y usa busqueda 
 secuencial es el mejor de los 3 algoritmos.
+
+El peor de los casos para el caso 1, que es insertar al final y busqueda secuencial sería que todo el arreglo estuviera desordenado,
+ y que el dato no estuviera, así obentría su peor medicion de rendimiento puesto que para ordenarlo habría que recorrer todo
+ hasta encontrar el dato, que al final nunca estuvo.
+
+En el segundo caso, insertar en orden y busqueda binaria, el peor de los casos sería que el dato que busca no esté, además de que se 
+entreguen los datos muy fuera de orden, puesto que este algoritmo debe recorrer una y otra vez el arreglo para ir comprobando
+que todo esté quedando en orden.
+
+En el tercer y ultimo caso, insertar al final, ordenar con quicksort y busqueda binaria, al igual que en el primer caso, el peor sería que
+todo el arreglo estuviera desordenado, puesto que habría que recorrer todo el arreglo hasta ordenarlo por qsort. Además de que el dato a
+buscar, al igual que en ambos casos anteriores, no esté.
